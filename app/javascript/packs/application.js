@@ -1,8 +1,12 @@
-require("@rails/ujs").start()
-require("turbolinks").start()
-require("@rails/activestorage").start()
+import Rails from "@rails/ujs";
+import * as ActiveStorage from "@rails/activestorage";
+import Turbolinks from "turbolinks";
 
 import "../css/application.scss";
+
+Rails.start();
+ActiveStorage.start();
+Turbolinks.start();
 
 document.addEventListener("turbolinks:load", function() {
   function followCursor() {
