@@ -1,0 +1,63 @@
+@import url("https://use.typekit.net/ptk6afx.css");
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.font-sans {
+  font-family: termina, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.banner {
+  @apply bg-black flex items-center justify-center h-screen w-full;
+
+  &__title {
+    @apply text-white uppercase leading-tight;
+    font-size: 8rem;
+  }
+}
+
+.spacey {
+  a {
+    background-image: linear-gradient(110deg, #f7aef8, #b388eb, #8093f1, #72ddf7, #f4f4ed);
+    background-size: 0 10%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    display: inline;
+    transition: 0.5s ease;
+  }
+
+  &:hover {
+    a {
+      background-size: 100% 10%;
+    }
+  }
+}
+
+.black__title {
+  transform: rotate(90deg);
+  font-size: 6rem;
+}
+
+.pink__title {
+  transform: rotate(-90deg);
+  font-size: 6rem;
+}
+
+body {
+  cursor: none;
+}
+
+#main-cursor {
+  @apply bg-white absolute w-1 h-1 rounded-full;
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+#follow-cursor {
+  @apply border-2 border-white rounded-full w-8 h-8 absolute;
+  transition: all 0.1s ease, left 0.15s linear, top 0.15s linear;
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
