@@ -38,14 +38,14 @@ document.addEventListener("turbolinks:load", function() {
     particlesJS("particles-js", {
       "particles": {
         "number": {
-          "value": 57,
+          "value": 20,
           "density": {
             "enable": true,
             "value_area": 473.4885849793636
           }
         },
         "color": {
-          "value": "#ffffff"
+          "value": "#ffe0e0"
         },
         "shape": {
           "type": "circle",
@@ -63,7 +63,7 @@ document.addEventListener("turbolinks:load", function() {
           }
         },
         "opacity": {
-          "value": 0.5,
+          "value": 1,
           "random": false,
           "anim": {
             "enable": false,
