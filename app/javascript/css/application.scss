@@ -15,6 +15,17 @@
     @apply text-white uppercase leading-tight;
     font-size: 8rem;
   }
+
+  #particles-js {
+    background-image: url("");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
 }
 
 .spacey {
