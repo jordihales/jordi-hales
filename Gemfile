@@ -11,6 +11,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'sprockets', '3.7.2'
 gem 'simple_form'
 gem 'mini_magick'
+gem 'canonical-rails'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
